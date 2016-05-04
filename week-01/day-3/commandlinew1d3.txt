@@ -1,0 +1,894 @@
+Last login: Tue May  3 22:32:32 on ttys000
+bobubook:~ approximata$ echo home
+home
+bobubook:~ approximata$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	xyz.txt
+bobubook:~ approximata$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	xyz.txt
+bobubook:~ approximata$ ls -alt
+total 104
+drwxr-xr-x    7 approximata  staff    238 May  4 10:47 .bash_sessions
+drwx------    2 approximata  staff     68 May  4 10:23 .Trash
+-rw-r--r--@   1 approximata  staff  20484 May  4 10:23 .DS_Store
+drwxr-xr-x+  37 approximata  staff   1258 May  4 10:23 .
+drwx------+ 279 approximata  staff   9486 May  4 10:21 Downloads
+-rw-------    1 approximata  staff   3231 May  4 10:18 .bash_history
+-rw-r--r--    1 approximata  staff      0 May  4 09:22 xyz.txt
+drwxr-xr-x    6 approximata  staff    204 May  4 08:57 .CloudStation
+drwx------+  13 approximata  staff    442 May  4 08:07 Desktop
+drwx------@  39 approximata  staff   1326 May  3 21:05 Documents
+drwxr-xr-x   14 approximata  staff    476 May  1 21:28 .atom
+drwx------+   8 approximata  staff    272 Apr 29 17:26 Pictures
+drwxr-xr-x    7 approximata  staff    238 Apr 24 09:43 .CloudStationBackup
+-rw-r--r--    1 approximata  staff    167 Mar 24 21:43 .bash_profile
+drwx------@  59 approximata  staff   2006 Mar 15 18:00 Library
+drwxr-xr-x    4 approximata  staff    136 Mar  7 07:47 .oracle_jre_usage
+drwx------    6 approximata  staff    204 Feb 18 10:56 Applications
+drwxr-xr-x    3 approximata  staff    102 Feb  1 07:53 .dvdcss
+drwxr-xr-x    7 root         admin    238 Nov 25 22:06 ..
+drwxr-xr-x    4 approximata  staff    136 Nov 16 22:47 .config
+drwxr-xr-x    3 approximata  staff    102 Nov 16 22:47 .local
+drwxr-x---    4 root         staff    136 Sep  5  2015 .android
+-rw-r--r--    1 approximata  staff   2720 Jul 24  2015 .RData
+-rw-r--r--    1 approximata  staff    335 Jul 24  2015 .Rhistory
+-rw-r--r--    1 approximata  staff     54 Jul 24  2015 .Rapp.history
+drwxr-xr-x   14 approximata  staff    476 Jul 23  2015 .rstudio-desktop
+drwx------+   8 approximata  staff    272 Jul  5  2015 Movies
+drwxr-xr-x    6 approximata  staff    204 Jul  5  2015 .subversion
+-rw-------    1 approximata  staff      0 Jun 28  2015 .Xauthority
+drwxr-xr-x    3 approximata  staff    102 Jun 28  2015 .cache
+-rw-------    1 approximata  staff   1024 Jun 28  2015 .rnd
+drwxr-xr-x    3 approximata  staff    102 Jun 28  2015 .R
+drwx------+   8 approximata  staff    272 May 10  2015 Music
+drwxr-xr-x    3 approximata  staff    102 Apr 30  2015 .Synology
+drwxr-x--x    4 approximata  staff    136 Dec 28  2014 .adobe
+-r--------    1 approximata  staff      7 Dec  1  2014 .CFUserTextEncoding
+drwx------+   5 approximata  staff    170 Nov 28  2014 Public
+bobubook:~ approximata$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	xyz.txt
+bobubook:~ approximata$ cd documents
+bobubook:documents approximata$ mkdir Greenfox
+bobubook:documents approximata$ cd greenfox
+bobubook:greenfox approximata$ ls
+bobubook:greenfox approximata$ ls -alt
+total 0
+drwxr-xr-x   2 approximata  staff    68 May  4 10:53 .
+drwx------@ 40 approximata  staff  1360 May  4 10:53 ..
+bobubook:greenfox approximata$ touch index.html
+bobubook:greenfox approximata$ mkdir images
+bobubook:greenfox approximata$ mkdir css
+bobubook:greenfox approximata$ cd images
+bobubook:images approximata$ cd ..
+bobubook:greenfox approximata$ ls
+css		images		index.html
+bobubook:greenfox approximata$ cd css
+bobubook:css approximata$ touch main.css
+bobubook:css approximata$ cd..
+-bash: cd..: command not found
+bobubook:css approximata$ cd ..
+bobubook:greenfox approximata$ cd images 
+bobubook:images approximata$ touch imig.txt
+bobubook:images approximata$ cd ..
+bobubook:greenfox approximata$ ls
+css		images		index.html
+bobubook:greenfox approximata$ cd ..
+bobubook:documents approximata$ cd greenfork
+bobubook:greenfork approximata$ git clone https://github.com/approximata/velox-syllabus
+Cloning into 'velox-syllabus'...
+remote: Counting objects: 780, done.
+remote: Compressing objects: 100% (609/609), done.
+remote: Total 780 (delta 130), reused 755 (delta 105), pack-reused 0
+Receiving objects: 100% (780/780), 1.91 MiB | 419.00 KiB/s, done.
+Resolving deltas: 100% (130/130), done.
+Checking connectivity... done.
+bobubook:greenfork approximata$ cd week-01/3-command-line/
+-bash: cd: week-01/3-command-line/: No such file or directory
+bobubook:greenfork approximata$ ls
+velox-syllabus
+bobubook:greenfork approximata$ cd velox-syllabus
+bobubook:velox-syllabus approximata$ cd week-01/3-command-line/
+bobubook:3-command-line approximata$ ls
+README.md	project
+bobubook:3-command-line approximata$ cd project
+bobubook:project approximata$ ls -alt
+total 16
+drwxr-xr-x  6 approximata  staff  204 May  4 11:06 .
+drwxr-xr-x  4 approximata  staff  136 May  4 11:06 ..
+drwxr-xr-x  6 approximata  staff  204 May  4 11:06 css
+drwxr-xr-x  7 approximata  staff  238 May  4 11:06 images
+-rw-r--r--  1 approximata  staff  133 May  4 11:06 index.html
+-rw-r--r--  1 approximata  staff  139 May  4 11:06 tasks.txt
+bobubook:project approximata$ cp index.html about.html
+bobubook:project approximata$ ls
+about.html	css		images		index.html	tasks.txt
+bobubook:project approximata$ mkdir temp_images
+bobubook:project approximata$ ls
+about.html	images		tasks.txt
+css		index.html	temp_images
+bobubook:project approximata$ cd..
+-bash: cd..: command not found
+bobubook:project approximata$ cd ..
+bobubook:3-command-line approximata$ ls
+README.md	project
+bobubook:3-command-line approximata$ cd project
+bobubook:project approximata$ ls
+about.html	images		tasks.txt
+css		index.html	temp_images
+bobubook:project approximata$ cd imagies
+-bash: cd: imagies: No such file or directory
+bobubook:project approximata$ cd images
+bobubook:images approximata$ ls
+1.jpg	2.jpg	3.jpg	4.jpg	5.jpg
+bobubook:images approximata$ cd ..
+bobubook:project approximata$ cp images/1.jpg 2.jpg /temp_images 
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory
+bobubook:project approximata$ cp images/1.jpg 2.jpg temp_images/ 
+cp: 2.jpg: No such file or directory
+bobubook:project approximata$ ls
+about.html	images		tasks.txt
+css		index.html	temp_images
+bobubook:project approximata$ cp images/1.jpg temp_images/
+bobubook:project approximata$ cp 
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory
+bobubook:project approximata$ 
+bobubook:project approximata$ cp images/1.jpg temp_images/ 
+bobubook:project approximata$ cp images/2.jpg 3.jpg temp_images/ 
+cp: 3.jpg: No such file or directory
+bobubook:project approximata$ cp images/2.jpg images/3.jpg temp_images/ 
+bobubook:project approximata$ cp images/*.jpg temp_images/
+bobubook:project approximata$ cd temp_images
+bobubook:temp_images approximata$ ls
+1.jpg	2.jpg	3.jpg	4.jpg	5.jpg
+bobubook:temp_images approximata$ cd..
+-bash: cd..: command not found
+bobubook:temp_images approximata$ cd ..
+bobubook:project approximata$ ls
+about.html	images		tasks.txt
+css		index.html	temp_images
+bobubook:project approximata$ mv css/6.jpg temp_images/
+bobubook:project approximata$ cd css
+bobubook:css approximata$ cd 
+7.jpg      about.css  main.css   
+bobubook:css approximata$ ls
+7.jpg		about.css	main.css
+bobubook:css approximata$ rm 7.jpg
+bobubook:css approximata$ cd ..
+bobubook:project approximata$ ls
+about.html	images		tasks.txt
+css		index.html	temp_images
+bobubook:project approximata$ echo file.txt
+file.txt
+bobubook:project approximata$ echo file.txt "cuccos itten"
+file.txt cuccos itten
+bobubook:project approximata$ cat file.txt
+cat: file.txt: No such file or directory
+bobubook:project approximata$ cat 
+.DS_Store    css/         index.html   temp_images/ 
+about.html   images/      tasks.txt    
+bobubook:project approximata$ cat 
+.DS_Store    css/         index.html   temp_images/ 
+about.html   images/      tasks.txt    
+bobubook:project approximata$ ls
+about.html	images		tasks.txt
+css		index.html	temp_images
+bobubook:project approximata$ ls
+about.html	images		tasks.txt
+css		index.html	temp_images
+bobubook:project approximata$ ls -alt
+total 40
+drwxr-xr-x  4 approximata  staff   136 May  4 11:39 css
+drwxr-xr-x  8 approximata  staff   272 May  4 11:35 temp_images
+-rw-r--r--@ 1 approximata  staff  6148 May  4 11:24 .DS_Store
+drwxr-xr-x  9 approximata  staff   306 May  4 11:24 .
+drwxr-xr-x  5 approximata  staff   170 May  4 11:24 ..
+-rw-r--r--  1 approximata  staff   133 May  4 11:15 about.html
+drwxr-xr-x  7 approximata  staff   238 May  4 11:06 images
+-rw-r--r--  1 approximata  staff   133 May  4 11:06 index.html
+-rw-r--r--  1 approximata  staff   139 May  4 11:06 tasks.txt
+bobubook:project approximata$ echo text.txt "valam"
+text.txt valam
+bobubook:project approximata$ ls
+about.html	images		tasks.txt
+css		index.html	temp_images
+bobubook:project approximata$ echo text.txt "lknsdjsdjkn"
+text.txt lknsdjsdjkn
+bobubook:project approximata$ ls
+about.html	images		tasks.txt
+css		index.html	temp_images
+bobubook:project approximata$ echo "kjnvkjsnyxkjn" > text.txt
+bobubook:project approximata$ ls
+about.html	images		tasks.txt	text.txt
+css		index.html	temp_images
+bobubook:project approximata$ cat hello.txt
+cat: hello.txt: No such file or directory
+bobubook:project approximata$ cat text.txt
+kjnvkjsnyxkjn
+bobubook:project approximata$ cat text.txt > text2.txt
+bobubook:project approximata$ ls
+about.html	images		tasks.txt	text.txt
+css		index.html	temp_images	text2.txt
+bobubook:project approximata$ cat index.html | wc
+      10      11     133
+bobubook:project approximata$ cat index.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+
+    </body>
+</html>
+bobubook:project approximata$ cat text2.txt
+kjnvkjsnyxkjn
+bobubook:project approximata$ "ailjefkl ljlnslcan ijscalknd lcdklnln opeiri" > text2.txt
+-bash: ailjefkl ljlnslcan ijscalknd lcdklnln opeiri: command not found
+bobubook:project approximata$ echo "ailjefkl ljlnslcan ijscalknd lcdklnln opeiri" > text2.txt
+bobubook:project approximata$ cat text2.txt
+ailjefkl ljlnslcan ijscalknd lcdklnln opeiri
+bobubook:project approximata$ sort text2.txt
+ailjefkl ljlnslcan ijscalknd lcdklnln opeiri
+bobubook:project approximata$ nano sort.txt
+bobubook:project approximata$ sort sort.txt
+alama
+geza 
+joci
+kalman
+laci
+piroska
+bobubook:project approximata$ sort sort.txt | sort > sort2.txt
+bobubook:project approximata$ nano sort.txt
+bobubook:project approximata$ nano sort2.txt
+bobubook:project approximata$ sort sort.txt | sort > sort2.txt
+bobubook:project approximata$ nano sort2.txt
+bobubook:project approximata$ ls
+about.html	images		sort.txt	tasks.txt	text.txt
+css		index.html	sort2.txt	temp_images	text2.txt
+bobubook:project approximata$ uniq tasks.txt
+3 redirections
+1 setup the environment
+4 manipulations
+2 basic terminal operations
+bobubook:project approximata$ cat tasks.txt
+3 redirections
+1 setup the environment
+4 manipulations
+2 basic terminal operations
+2 basic terminal operations
+2 basic terminal operations
+bobubook:project approximata$ 
+bobubook:project approximata$ cat task.txt
+cat: task.txt: No such file or directory
+bobubook:project approximata$ cat 
+.DS_Store    css/         index.html   sort2.txt    temp_images/ text2.txt
+about.html   images/      sort.txt     tasks.txt    text.txt     
+bobubook:project approximata$ cat tasks.txt > task.txt
+bobubook:project approximata$ cat task
+cat: task: No such file or directory
+bobubook:project approximata$ cat task.txt
+3 redirections
+1 setup the environment
+4 manipulations
+2 basic terminal operations
+2 basic terminal operations
+2 basic terminal operations
+bobubook:project approximata$ grep basic task.txt
+2 basic terminal operations
+2 basic terminal operations
+2 basic terminal operations
+bobubook:project approximata$ greb 
+.DS_Store    css/         index.html   sort2.txt    tasks.txt    text.txt
+about.html   images/      sort.txt     task.txt     temp_images/ text2.txt
+bobubook:project approximata$ greb greb -h
+-bash: greb: command not found
+bobubook:project approximata$ greb --help
+-bash: greb: command not found
+bobubook:project approximata$ grep -h
+usage: grep [-abcDEFGHhIiJLlmnOoqRSsUVvwxZ] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+bobubook:project approximata$ grep basic tasks.txt | grep v 
+bobubook:project approximata$ grep -v  basic tasks.txt 
+3 redirections
+1 setup the environment
+4 manipulations
+bobubook:project approximata$ 
+bobubook:project approximata$ git config --global approximata "Bodor Mate"
+error: key does not contain a section: approximata
+bobubook:project approximata$ git config 
+.DS_Store    css/         index.html   sort2.txt    tasks.txt    text.txt
+about.html   images/      sort.txt     task.txt     temp_images/ text2.txt
+bobubook:project approximata$ git config -h
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+bobubook:project approximata$ git config --global -h
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+bobubook:project approximata$ git config --global approximata "bodor mate"
+error: key does not contain a section: approximata
+bobubook:project approximata$ ls
+about.html	index.html	task.txt	text.txt
+css		sort.txt	tasks.txt	text2.txt
+images		sort2.txt	temp_images
+bobubook:project approximata$ cd..
+-bash: cd..: command not found
+bobubook:project approximata$ cd ..
+bobubook:3-command-line approximata$ cd ..
+bobubook:week-01 approximata$ cd ..
+bobubook:velox-syllabus approximata$ cd ..
+bobubook:greenfork approximata$ cd ..
+bobubook:documents approximata$ cd greenfox
+bobubook:greenfox approximata$ ls
+css		images		index.html
+bobubook:greenfox approximata$ cd ..
+bobubook:documents approximata$ mkdir greengit
+bobubook:documents approximata$ cd greengit
+bobubook:greengit approximata$ mkdir approximata
+bobubook:greengit approximata$ cd approximata
+bobubook:approximata approximata$ cd..
+-bash: cd..: command not found
+bobubook:approximata approximata$ cd ..
+bobubook:greengit approximata$ ls
+approximatekb
+bobubook:greengit approximata$ cd approximatekb
+bobubook:approximatekb approximata$ git config --global user.name "bodor mate"
+bobubook:approximatekb approximata$ git config --global user.email bodormate@gmail.com
+bobubook:approximatekb approximata$ git clone -h
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --recurse-submodules  initialize submodules in the clone
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --single-branch       clone only one branch, HEAD or --branch
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+bobubook:approximatekb approximata$ git clone https://github.com/greenfox-velox/approximata.git
+Cloning into 'approximata'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+bobubook:approximatekb approximata$ cd..
+-bash: cd..: command not found
+bobubook:approximatekb approximata$ cd ..
+bobubook:greengit approximata$ ls
+approximatekb
+bobubook:greengit approximata$ cd approximatekb
+bobubook:approximatekb approximata$ ls
+approximata
+bobubook:approximatekb approximata$ cd approximata
+bobubook:approximata approximata$ ls
+README.md	week-01
+bobubook:approximata approximata$ ls -alt
+total 32
+-rw-r--r--@  1 approximata  staff  8196 May  4 14:08 .DS_Store
+drwxr-xr-x   5 approximata  staff   170 May  4 14:07 week-01
+drwxr-xr-x   6 approximata  staff   204 May  4 14:05 .
+drwxr-xr-x   4 approximata  staff   136 May  4 14:01 ..
+drwxr-xr-x  13 approximata  staff   442 May  4 14:00 .git
+-rw-r--r--   1 approximata  staff    32 May  4 14:00 README.md
+bobubook:approximata approximata$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+bobubook:approximata approximata$ git add week-01
+bobubook:approximata approximata$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+bobubook:approximata approximata$ ls
+README.md	week-01
+bobubook:approximata approximata$ cd week-01
+bobubook:week-01 approximata$ cd day-3
+bobubook:day-3 approximata$ ls
+bobubook:day-3 approximata$ touch start.txt
+bobubook:day-3 approximata$ cd..
+-bash: cd..: command not found
+bobubook:day-3 approximata$ cd ..
+bobubook:week-01 approximata$ cd ..
+bobubook:approximata approximata$ ls
+README.md	week-01
+bobubook:approximata approximata$ git add week-01
+bobubook:approximata approximata$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   week-01/day-3/start.txt
+
+bobubook:approximata approximata$ git commit -m "start.txt a kezdetek"
+[master 3940268] start.txt a kezdetek
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 week-01/day-3/start.txt
+bobubook:approximata approximata$ cd week-01
+bobubook:week-01 approximata$ cd day-3
+bobubook:day-3 approximata$ touch testtxt1.txt testtxt2.txt testtxt3.txt testtxt4.txt testtxt5.txt
+bobubook:day-3 approximata$ ls
+start.txt	test3		testtxt1.txt	testtxt4.txt
+test1		test4		testtxt2.txt	testtxt5.txt
+test2		test5		testtxt3.txt
+bobubook:day-3 approximata$ ls -alt
+total 16
+drwxr-xr-x  14 approximata  staff   476 May  4 14:30 .
+-rw-r--r--@  1 approximata  staff  6148 May  4 14:30 .DS_Store
+-rw-r--r--   1 approximata  staff     0 May  4 14:30 testtxt1.txt
+-rw-r--r--   1 approximata  staff     0 May  4 14:30 testtxt2.txt
+-rw-r--r--   1 approximata  staff     0 May  4 14:30 testtxt3.txt
+-rw-r--r--   1 approximata  staff     0 May  4 14:30 testtxt4.txt
+-rw-r--r--   1 approximata  staff     0 May  4 14:30 testtxt5.txt
+drwxr-xr-x   2 approximata  staff    68 May  4 14:28 test5
+drwxr-xr-x   2 approximata  staff    68 May  4 14:28 test4
+drwxr-xr-x   2 approximata  staff    68 May  4 14:28 test3
+drwxr-xr-x   2 approximata  staff    68 May  4 14:28 test2
+drwxr-xr-x   2 approximata  staff    68 May  4 14:28 test1
+-rw-r--r--   1 approximata  staff     0 May  4 14:17 start.txt
+drwxr-xr-x   5 approximata  staff   170 May  4 14:07 ..
+bobubook:day-3 approximata$ git add .
+bobubook:day-3 approximata$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   testtxt1.txt
+	new file:   testtxt2.txt
+	new file:   testtxt3.txt
+	new file:   testtxt4.txt
+	new file:   testtxt5.txt
+
+bobubook:day-3 approximata$ git commit -m "5 test file ment fel"
+[master b10dbf0] 5 test file ment fel
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 week-01/day-3/testtxt1.txt
+ create mode 100644 week-01/day-3/testtxt2.txt
+ create mode 100644 week-01/day-3/testtxt3.txt
+ create mode 100644 week-01/day-3/testtxt4.txt
+ create mode 100644 week-01/day-3/testtxt5.txt
+bobubook:day-3 approximata$ echo "jldsvnn" > 
+.DS_Store     test2/        test5/        testtxt3.txt  
+start.txt     test3/        testtxt1.txt  testtxt4.txt  
+test1/        test4/        testtxt2.txt  testtxt5.txt  
+bobubook:day-3 approximata$ echo "jldsvnn" > testtxt3.txt
+bobubook:day-3 approximata$ cat testtxt3.txt 
+jldsvnn
+bobubook:day-3 approximata$ echo "kjcd" > testtxt4.txt
+bobubook:day-3 approximata$ git diff
+diff --git a/week-01/day-3/testtxt3.txt b/week-01/day-3/testtxt3.txt
+index e69de29..75c5dcb 100644
+--- a/week-01/day-3/testtxt3.txt
++++ b/week-01/day-3/testtxt3.txt
+@@ -0,0 +1 @@
++jldsvnn
+diff --git a/week-01/day-3/testtxt4.txt b/week-01/day-3/testtxt4.txt
+index e69de29..39cdcaf 100644
+--- a/week-01/day-3/testtxt4.txt
++++ b/week-01/day-3/testtxt4.txt
+@@ -0,0 +1 @@
++kjcd
+bobubook:day-3 approximata$ git add --all
+bobubook:day-3 approximata$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   testtxt3.txt
+	modified:   testtxt4.txt
+
+bobubook:day-3 approximata$ git commit -m "2 file valtozott"
+[master 2e904d5] 2 file valtozott
+ 2 files changed, 2 insertions(+)
+bobubook:day-3 approximata$ git pull --h
+error: unknown option `h'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+
+Options related to merging
+    -r, --rebase[=<false|true|preserve|interactive>]
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    -s, --strategy <strategy>
+                          merge strategy to use
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Options related to fetching
+    --all                 fetch from all remotes
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    --recurse-submodules[=<on-demand>]
+                          control recursive fetching of submodules
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack
+    --depth <depth>       deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+
+bobubook:day-3 approximata$ git log
+commit 2e904d5f08aa306495469b2df26071441875090a
+Author: bodor mate <bodormate@gmail.com>
+Date:   Wed May 4 14:37:26 2016 +0200
+
+    2 file valtozott
+
+commit b10dbf0131c8feff04c159f8e8b4de278896fceb
+Author: bodor mate <bodormate@gmail.com>
+Date:   Wed May 4 14:34:42 2016 +0200
+
+    5 test file ment fel
+
+commit 394026879ccc8a6304f71eb449d2e364098fabaa
+Author: bodor mate <bodormate@gmail.com>
+Date:   Wed May 4 14:19:04 2016 +0200
+
+    start.txt a kezdetek
+
+commit f185374181e30288df101614f5ecbe0e12ff68ca
+Author: bodormatek <approximata@users.noreply.github.com>
+Date:   Wed May 4 13:39:54 2016 +0200
+
+    Initial commit
+
+bobubook:day-3 approximata$ git pull
+Already up-to-date.
+bobubook:day-3 approximata$ git push -u origin my_branch
+error: src refspec my_branch does not match any.
+error: failed to push some refs to 'https://github.com/greenfox-velox/approximata.git'
+bobubook:day-3 approximata$ git push -u origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/greenfox-velox/approximata.git/'
+bobubook:day-3 approximata$ git push -u origin master
+Username for 'https://github.com': approximata
+Password for 'https://approximata@github.com': 
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (15/15), 1.07 KiB | 0 bytes/s, done.
+Total 15 (delta 1), reused 0 (delta 0)
+To https://github.com/greenfox-velox/approximata.git
+   f185374..2e904d5  master -> master
+Branch master set up to track remote branch master from origin.
+bobubook:day-3 approximata$ echo "most megint irok valamit" > testtxt1.txt
+bobubook:day-3 approximata$ echo "most megint irok valamit" > testtxt2.txt
+bobubook:day-3 approximata$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   testtxt1.txt
+	modified:   testtxt2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bobubook:day-3 approximata$ git add --all
+bobubook:day-3 approximata$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   testtxt1.txt
+	modified:   testtxt2.txt
+
+bobubook:day-3 approximata$ git reset HEAD testtxt1.txt
+Unstaged changes after reset:
+M	week-01/day-3/testtxt1.txt
+bobubook:day-3 approximata$ git reset HEAD testtxt2.txt
+Unstaged changes after reset:
+M	week-01/day-3/testtxt1.txt
+M	week-01/day-3/testtxt2.txt
+bobubook:day-3 approximata$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   testtxt1.txt
+	modified:   testtxt2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bobubook:day-3 approximata$ git diff
+diff --git a/week-01/day-3/testtxt1.txt b/week-01/day-3/testtxt1.txt
+index e69de29..e5e5a39 100644
+--- a/week-01/day-3/testtxt1.txt
++++ b/week-01/day-3/testtxt1.txt
+@@ -0,0 +1 @@
++most megint irok valamit
+diff --git a/week-01/day-3/testtxt2.txt b/week-01/day-3/testtxt2.txt
+index e69de29..e5e5a39 100644
+--- a/week-01/day-3/testtxt2.txt
++++ b/week-01/day-3/testtxt2.txt
+@@ -0,0 +1 @@
++most megint irok valamit
+bobubook:day-3 approximata$ echo "jdjh" >> testtxt5.txt
+bobubook:day-3 approximata$ echo "jajajajjdjh" >> testtxt3.txt
+bobubook:day-3 approximata$ git add -all
+error: did you mean `--all` (with two dashes ?)
+bobubook:day-3 approximata$ git add --all
+bobubook:day-3 approximata$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   testtxt1.txt
+	modified:   testtxt2.txt
+	modified:   testtxt3.txt
+	modified:   testtxt5.txt
+
+bobubook:day-3 approximata$ git diff --staged
+diff --git a/week-01/day-3/testtxt1.txt b/week-01/day-3/testtxt1.txt
+index e69de29..e5e5a39 100644
+--- a/week-01/day-3/testtxt1.txt
++++ b/week-01/day-3/testtxt1.txt
+@@ -0,0 +1 @@
++most megint irok valamit
+diff --git a/week-01/day-3/testtxt2.txt b/week-01/day-3/testtxt2.txt
+index e69de29..e5e5a39 100644
+--- a/week-01/day-3/testtxt2.txt
++++ b/week-01/day-3/testtxt2.txt
+@@ -0,0 +1 @@
++most megint irok valamit
+diff --git a/week-01/day-3/testtxt3.txt b/week-01/day-3/testtxt3.txt
+index 75c5dcb..5b84ea3 100644
+--- a/week-01/day-3/testtxt3.txt
++++ b/week-01/day-3/testtxt3.txt
+@@ -1 +1,2 @@
+ jldsvnn
++jajajajjdjh
+diff --git a/week-01/day-3/testtxt5.txt b/week-01/day-3/testtxt5.txt
+index e69de29..8234328 100644
+--- a/week-01/day-3/testtxt5.txt
++++ b/week-01/day-3/testtxt5.txt
+@@ -0,0 +1 @@
++jdjh
+
+bobubook:day-3 approximata$ git diff --cached
+diff --git a/week-01/day-3/testtxt1.txt b/week-01/day-3/testtxt1.txt
+index e69de29..e5e5a39 100644
+--- a/week-01/day-3/testtxt1.txt
++++ b/week-01/day-3/testtxt1.txt
+@@ -0,0 +1 @@
++most megint irok valamit
+diff --git a/week-01/day-3/testtxt2.txt b/week-01/day-3/testtxt2.txt
+index e69de29..e5e5a39 100644
+--- a/week-01/day-3/testtxt2.txt
++++ b/week-01/day-3/testtxt2.txt
+@@ -0,0 +1 @@
++most megint irok valamit
+diff --git a/week-01/day-3/testtxt3.txt b/week-01/day-3/testtxt3.txt
+index 75c5dcb..5b84ea3 100644
+--- a/week-01/day-3/testtxt3.txt
++++ b/week-01/day-3/testtxt3.txt
+@@ -1 +1,2 @@
+ jldsvnn
++jajajajjdjh
+diff --git a/week-01/day-3/testtxt5.txt b/week-01/day-3/testtxt5.txt
+index e69de29..8234328 100644
+--- a/week-01/day-3/testtxt5.txt
++++ b/week-01/day-3/testtxt5.txt
+@@ -0,0 +1 @@
+bobubook:day-3 approximata$ 
+bobubook:day-3 approximata$ git push --all
+Everything up-to-date
+bobubook:day-3 approximata$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   testtxt1.txt
+	modified:   testtxt2.txt
+	modified:   testtxt3.txt
+	modified:   testtxt5.txt
+
+bobubook:day-3 approximata$ git diff
+bobubook:day-3 approximata$ git commit -m -all
+[master 3bae7e8] -all
+ 4 files changed, 4 insertions(+)
+bobubook:day-3 approximata$ git push --all
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 539 bytes | 0 bytes/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/greenfox-velox/approximata.git
+   2e904d5..3bae7e8  master -> master
+bobubook:day-3 approximata$ ls
+start.txt	test3		testtxt1.txt	testtxt4.txt
+test1		test4		testtxt2.txt	testtxt5.txt
+test2		test5		testtxt3.txt
+bobubook:day-3 approximata$ cd ..
+bobubook:week-01 approximata$ cd ..
+bobubook:approximata approximata$ ls
+README.md	week-01
+bobubook:approximata approximata$ cat readme.md
+# approximata
+Bodor Mate repoja
+bobubook:approximata approximata$ echo "[ezek a sylabusok](https://github.com/approximata/velox-syllabus.git)" >> readme.md 
+bobubook:approximata approximata$ cat readme.md
+# approximata
+Bodor Mate repoja
+[ezek a sylabusok](https://github.com/approximata/velox-syllabus.git)
+bobubook:approximata approximata$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bobubook:approximata approximata$ git add 
+.DS_Store  .git/      README.md  week-01/   
+bobubook:approximata approximata$ git add readme.md
+bobubook:approximata approximata$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bobubook:approximata approximata$ git commit -m "comment a readmeben"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	modified:   README.md
+
+no changes added to commit
+bobubook:approximata approximata$ git add .
+bobubook:approximata approximata$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+bobubook:approximata approximata$ git commit -m "readme atirva"
+[master 4452811] readme atirva
+ 1 file changed, 1 insertion(+)
+bobubook:approximata approximata$ git push 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 360 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/greenfox-velox/approximata.git
+   3bae7e8..4452811  master -> master
+bobubook:approximata approximata$ ls
+README.md	week-01
+bobubook:approximata approximata$ cd week-01
+bobubook:week-01 approximata$ cd day-3
+bobubook:day-3 approximata$ ls
+start.txt	test3		testtxt1.txt	testtxt4.txt
+test1		test4		testtxt2.txt	testtxt5.txt
+test2		test5		testtxt3.txt
+bobubook:day-3 approximata$ 
+
