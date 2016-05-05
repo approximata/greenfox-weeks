@@ -1,0 +1,23 @@
+body {
+  background: #eee;
+}
+
+.pageDesc {
+  background: #fff;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  font-size: 30px;
+  color: red;
+  margin-top: 10px;
+
+}
+
+.box {
+    margin: 10px 45px;
+    padding: 20px;
+    width: 200px;
+    height: 30px;
+    background: yellow;
+    border: 5px black solid;
+}
