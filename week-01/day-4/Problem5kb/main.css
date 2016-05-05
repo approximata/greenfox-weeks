@@ -1,0 +1,29 @@
+body {
+  margin: 50px;
+}
+
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: gold;
+}
+
+ul {
+    list-style-type: square;
+    color: blue;
+}
+
+ul ul {
+  list-style-type: disc;
+  color: black;
+}
+
+ol {
+  color:black;
+}
+
+span {
+  color: red;
+}
