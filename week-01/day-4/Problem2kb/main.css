@@ -1,7 +1,6 @@
 body {
   background: #eee;
 }
-
 .pageDesc {
   background: #fff;
   width: auto;
@@ -11,7 +10,6 @@ body {
   color: blue;
   margin-top: 10px;
 }
-
 .boxout {
   padding: 20px;
   margin: 10px;
@@ -19,9 +17,7 @@ body {
   width: 248px;
   height: 235px;
 }
-
 .box {
-
     padding: 20px;
     width: 200px;
     height: 30px;
