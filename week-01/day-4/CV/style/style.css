@@ -3,20 +3,18 @@ header {
   background:url(anakin2.png);
   background-size: cover;
   height: 400px;
-  margin-top: 0px;
-  margin-bottom: 60px;
+  margin: 0 0 60px;
 }
 
 header h1 {
-  padding-top: 200px;
-  padding-left: 4em;
-  font-size: 58px;
+  padding: 200px 4em 0;
+  font-size: 38px;
   color: #222;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
-span {
-  font-size: 38px;
+.hi {
+  font-size: 58px;
 }
 
 blockquote {
