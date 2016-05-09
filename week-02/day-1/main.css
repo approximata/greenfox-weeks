@@ -1,0 +1,37 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.bigbox {
+  width: 380px;
+  padding: 10px 20px;
+  border: 2px solid;
+  padding-bottom: 30px;
+}
+
+.box {
+  width: 330px;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+hr {
+  height: 3px;
+  border: 2px;
+  background: black;
+}
+
+.duck1 {
+  float: left;
+
+}
+
+.duck2 {
+  float:right;
+}
