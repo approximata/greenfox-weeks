@@ -1,0 +1,64 @@
+.center{
+  width: 100%
+}
+.fixbox {
+  margin:0 auto;
+  height: 675px;
+  width: 520px;
+  background: white;
+  position: relative;
+}
+
+.bluebox {
+  height: 100px;
+  width: 520px;
+  background: #00ffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.orangepurplebox {
+  height: 480px;
+  width: 100px;
+
+}
+
+.fixbox div:nth-child(2) {
+  background: #fea500;
+  position: absolute;
+  top: 100px;
+}
+
+.fixbox div:nth-child(4) {
+  background: purple;
+  position: absolute;
+  top: 100px;
+  left: 420px;
+}
+
+.redbox {
+  height: 480px;
+  width: 290px;
+  background: red;
+  position: absolute;
+  top: 100px;
+  left: 115px;
+}
+
+.fixbox div:last-child {
+  background: blue;
+  position: absolute;
+  top: 580px;
+  left: 0px;
+}
+
+.blackbox{
+  height: 50px;
+  width: 50px;
+  background: black;
+  position: absolute;
+  top: 510px;
+  left: 335px;
+}
