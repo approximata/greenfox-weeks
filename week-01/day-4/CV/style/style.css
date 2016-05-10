@@ -18,9 +18,8 @@ header h1 {
 }
 
 blockquote {
-  font-family: 'Abril Fatface', cursive;
+  font: 45px 'Abril Fatface', cursive;
   width: 800px;
-  font-size: 45px;
   text-align: left;
   color: #FFFFFF;
   margin: 55px auto;
@@ -29,7 +28,6 @@ blockquote {
 
 blockquote strong {
   font-size: 3em;
-
 }
 
 section {
