@@ -1,64 +1,164 @@
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1{
+  padding: 10px 0 0 70px;
+}
+
+h2{
+  width: 300px;
+  height: 33px;
+  background: #938c97;
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  border: 2px solid #938c97;
+  border-radius: 5px;
+  padding: 5px 0 0 25px;
+}
+
+.wrap{
+  margin: auto;
+    width: 820px;
+    height: 1000px;
+    padding: 5em;
+    background: #dcd6cd;
+}
 form {
-  /* Just to center the form on the page */
-  margin: 0 auto;
-  width: 400px;
-
-  /* To see the limits of the form */
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
+}
+.personalandcontact {
+  width: 80%;
+  padding: 0;
+  border: 2px solid black;
+  margin-left: 70px;
+}
+.personalandcontact::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.personal {
+  width: 49%;
+  padding: 0;
+  border: 2px solid black;
+  float:left;
+}
+.contact {
+  width: 49%;
+  padding: 0;
+  border: 2px solid black;
+  float: right;
+}
+.birthandgender {
+  border: 2px solid black;
+}
+.birthandgender::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.year{
+  padding: 0;
+  border: 2px solid black;
+  float:left;
+  width: 50%;
+}
+.gender{
+  padding: 0;
+  border: 2px solid black;
+  float:right;
+  width: 50%;
 }
 
-div + div {
-  margin-top: 1em;
+.brandofyou {
+  border: 2px solid black;
+}
+.brandofyou::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.brandofyoufirst{
+  padding: 0;
+  border: 2px solid black;
+  float:left;
+  width: 50%;
+}
+.brandofyousecound{
+  padding: 0;
+  border: 2px solid black;
+  float:right;
+  width: 50%;
 }
 
-label {
-  /* To make sure that all label have the same size and are properly align */
-  display: inline-block;
-  width: 90px;
+label,.genlabel {
   text-align: right;
+  color: #40375a;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 0;
+  display: block;
 }
 
-input, textarea {
-  /* To make sure that all text field have the same font settings
-     By default, textarea are set with a monospace font */
-  font: 1em sans-serif;
-
-  /* To give the same size to all text field */
-  width: 300px;
-
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-
-  /* To harmonize the look & feel of text field border */
-  border: 1px solid #999;
+input[type="text"],input[type="tel"],input[type="email"],input[type="url"],select {
+  background: white;
+  width: 300px;
+  height: 33px;
+  border: 2px solid #938c97;
+  border-radius: 5px;
+}
+input[type="number"]{
+  background: white;
+  width: 80px;
+  height: 33px;
+  border: 2px solid #938c97;
+s  border-radius: 5px;
+}
+.introductioncv, .acceptance, .buttons {
+  margin-left: 70px;
+  padding:10px;
 }
 
-input:focus, textarea:focus {
-  /* To give a little highligh on active elements */
-  border-color: #000;
+textarea{
+  width: 640px;
+  height: 170px;
 }
 
-textarea {
-  /* To properly align multiline text field with their label */
-  vertical-align: top;
-
-  /* To give enough room to type some text */
-  height: 5em;
-
-  /* To allow users to resize any textarea vertically
-     It works only on Chrome, Firefox and Safari */
-  resize: vertical;
+.gender label{
+  display: inline;
+  font-weight: lighter;
 }
 
-.button {
-  /* To position the buttons to the same position of the text fields */
-  padding-left: 90px; /* same size as the label elements */
+.buttons{
+  max-width: 670px;
+  border: 2px solid black;
+}
+.save {
+  width: 49%;
+  padding: 0;
+  border: 2px solid black;
+  float: left;
+}
+.cancel{
+  display: flex;
+  width: 49%;
+  padding: 0;
+  border: 2px solid black;
+  justify-content: flex-end;
 }
 
-button {
-  /* This extra magin represent the same space as the space between
-     the labels and their text fields */
-  margin-left: .5em;
+button#save {
+  width: 220px;
+  background: #4E4563;
+  color: #E1DBD1;
+  font-size: 18px;
+}
+button#cancel {
+  width: 160px;
+  background: #F2F2F2;
+  color: #574E67;
+  font-size: 14px;
 }
