@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  box-sizing: border-box;
+  }
+
+.wrapper {
+  order: 1;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  color: rgb(6, 69, 173);
+  font-family: sans-serif;
+  border-bottom: 1px solid #a7d7f9;
+  background: linear-gradient(to top, #f6f6f6, white);
+}
+.firsttopnav{
+  justify-content: flex-end;
+  font-size: 12px;
+  padding-right: 7px;
+}
+.secondnav{
+  font-size: 13px;
+  padding: 16px 7px 7px 0px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+nav li{
+  flex: 1 0 auto;
+  margin: 6px 0 0 9px;
+}
+nav a, .sidemenu a{
+  text-decoration: none;
+}
+nav a:hover, .sidemenu a:hover{
+  text-decoration: underline;
+}
+
+aside {
+  background: #f6f6f6;
+  border-right: #a7d7f9 solid 1px;
+  font-size: 12px;
+  font-family: sans-serif;
+  line-height: 13.5px;
+  order: 0;
+  flex: 1 0 175px;
+}
+.sidemenu {
+  padding: 5px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.sidemenu ul:first-child{
+  padding: 5px;
+}
+
+.sidemenu ul{
+  padding: 0 15px;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+.sidemenu li{
+  list-style-type: none;
+}
+h5{
+  margin: 2px 0;
+}
+
+main {
+  padding: 5px 16px;
+
+
+}
+.infobox {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 2px20px;
+  width: auto;
+  height: 520px;
+  border: 1px solid black;
+  float: right;
+}
+.toctitle {
+  width: 123px;
+  height: 264px;
+  border: 1px solid black;
+}
+section::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+footer {
+  background: blue;
+  height: 100px;
+}
