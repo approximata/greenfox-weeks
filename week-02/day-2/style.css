@@ -93,7 +93,6 @@ form {
   float:right;
   width: 50%;
 }
-
 label,.genlabel {
   text-align: right;
   color: #40375a;
@@ -102,7 +101,6 @@ label,.genlabel {
   padding: 10px 0;
   display: block;
 }
-
 input[type="text"],input[type="tel"],input[type="email"],input[type="url"],select {
   background: white;
   width: 300px;
@@ -121,17 +119,14 @@ s  border-radius: 5px;
   margin-left: 70px;
   padding:10px;
 }
-
 textarea{
   width: 640px;
   height: 170px;
 }
-
 .gender label{
   display: inline;
   font-weight: lighter;
 }
-
 .buttons{
   max-width: 670px;
   border: 2px solid black;
@@ -149,7 +144,6 @@ textarea{
   border: 2px solid black;
   justify-content: flex-end;
 }
-
 button#save {
   width: 220px;
   background: #4E4563;
