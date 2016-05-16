@@ -26,13 +26,13 @@ body {
   background: orange;
   min-width: 100px;
   height: 500px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .rightbox {
   background: purple;
   min-width: 100px;
   height: 500px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .content {
   height: 500px;
