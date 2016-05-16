@@ -76,8 +76,11 @@ form {
 .brandofyou {
   border: 2px solid black;
 }
+.brandofyou label{
+  padding: 5px;
+}
 .brandofyou::after{
-  content: "";
+  content: "Többet is választhatsz!";
   display: block;
   clear: both;
 }

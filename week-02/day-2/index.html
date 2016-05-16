@@ -12,12 +12,12 @@
         <div class="personalandcontact">
           <div class="personal">
             <h2>Személyes adatok</h2>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="user_name">
+              <label for="name">Születési név:</label>
+              <input type="text" id="name" name="user_name" required>
             <div class="birthandgender">
               <div class="year">
                 <label for="Születési éved">Születési éved:</label>
-                <input type="number" min="1910" max="2016" id="year" name="birth_year">
+                <input type="number" min="1910" max="2016" id="year" name="birth_year" placeholder="pl: 1984">
               </div>
               <div class="gender">
                 <div class="genlabel">Nemed</div>
@@ -27,21 +27,18 @@
             </div>
             <div class="brandofyou">
               <div class="brandofyoufirst">
-                <input type=checkbox name="brands[]" id="adidas">Adidas<br>
-                <input type=checkbox name="brands[]" id="brand">Apple<br>
-                <input type=checkbox name="brands[]" id="brand">Coca-Cola<br>
-                <input type=checkbox name="brands[]" id="brand">Mazda<br>
-                <input type=checkbox name="brands[]" id="brand">Mazda<br>
-                <input type=checkbox name="brands[]" id="brand">Mazda<br>
-                <p>Többet is választhatsz!</p>
+                <label for="adidas"><input type=checkbox name="brands[]" id="adidas">Adidas</label>
+                <label for="apple"><input type=checkbox name="brands[]" id="apple">Apple</label>
+                <label for="cc"><input type=checkbox name="brands[]" id="cc">Coca-Cola</label>
+                <label for="cc"><input type=checkbox name="brands[]" id="cc">Coca-Cola</label>
+                <label for="cc"><input type=checkbox name="brands[]" id="cc">Coca-Cola</label>
+                <label for="cc"><input type=checkbox name="brands[]" id="cc">Coca-Cola</label>
               </div>
               <div class="brandofyousecound">
-                <input type=checkbox name="brands[]" id="brand">Mazda<br>
-                <input type=checkbox name="brands[]" id="brand">Mazda<br>
-                <input type=checkbox name="brands[]" id="brand">Mazda<br>
-                <input type=checkbox name="brands[]" id="brand">Mazda<br>
-                <input type=checkbox name="brands[]" id="brand">Mazda<br>
-                <input type=checkbox name="brands[]" id="brand">Mazda<br>
+                <label for="mz"><input type=checkbox name="brands[]" id="mz">Mazda</label>
+                <label for="mz"><input type=checkbox name="brands[]" id="mz">Mazda</label>
+                <label for="mz"><input type=checkbox name="brands[]" id="mz">Mazda</label>
+                <label for="mz"><input type=checkbox name="brands[]" id="mz">Mazda</label>
               </div>
             </div>
             </div>
@@ -49,10 +46,10 @@
                  <h2>Kapcsolat</h2>
                  <div class="simplebox">
                    <label for="phone">Telefonszám</label>
-                   <input type="tel" name="tel" id="phone">
+                   <input type="tel" name="tel" id="phone" required>
 
                    <label for="email">E-mail cím</label>
-                   <input type="email" name="email" id="email">
+                   <input type="email" name="email" id="email" required>
 
                    <label for="facebook">Facebook profilod</label>
                    <input type="url" name="facebook" id="facebook">
