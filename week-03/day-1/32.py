@@ -4,3 +4,6 @@ text = 'Gold'
 while ae >= 1:
     print(text)
     ae -=1
+
+for n in range(len(text)):
+    print(text)

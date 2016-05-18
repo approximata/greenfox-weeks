@@ -6,16 +6,14 @@ out = 0
 # if the aa contains no elements it should set to -1
 print (len(aa))
 if (len(aa)) == 1:
-    out += 1
-    print (out)
+    out = 1
 elif (len(aa)) == 2:
-    out += 2
-    print (out)
+    out = 2
 elif (len(aa)) > 2:
-    out += 10
-    print (out)
+    out = 10
 elif (len(aa)) == 0:
-    out -= 1
-    print (out)
+    out = -1
 else:
-    print("ajaja")
+    out = "ajaja"
+
+print (out)
