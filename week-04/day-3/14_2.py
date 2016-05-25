@@ -4,7 +4,6 @@ root = Tk()
 
 canvas = Canvas(root, width=300, height=300)
 def create_line(x1, y1, x2, y2):
-
     canvas.create_line(x1, y1, x2, y2, fill= 'blue')
 
 w = 300

@@ -15,7 +15,6 @@ def create_size_center_rectangle(size, color):
     y = 150 - (size / 2)
     x_end_point = x + size
     y_end_point = y + size
-
     square = canvas.create_rectangle(x, y, x_end_point, y_end_point, fill = color)
 
 size = 10
@@ -27,8 +26,6 @@ def create_many_rectangle(numberofrectange):
         create_size_center_rectangle(size + 10 * i, color)
 
 create_many_rectangle(20)
-
-
 
 canvas.pack()
 mainloop()

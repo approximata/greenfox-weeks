@@ -6,10 +6,8 @@ root = Tk()
 
 canvas = Canvas(root, width=300, height=300)
 def create_square(x, y, size, color):
-
     x_end_point = x + size
     y_end_point = y + size
-
     square = canvas.create_rectangle(x, y, x_end_point, y_end_point, fill = color)
 
 size = 5

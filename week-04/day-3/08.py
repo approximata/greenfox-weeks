@@ -10,11 +10,9 @@ root = Tk()
 
 canvas = Canvas(root, width=300, height=300)
 def create_size_color_rectangle(x, y, size, color):
-
     x_end_point = x + size
     y_end_point = y + size
-
-    return canvas.create_rectangle(x, y, x_end_point, y_end_point, fill=color)
+    canvas.create_rectangle(x, y, x_end_point, y_end_point, fill=color)
 
 create_size_color_rectangle(140, 140, 50, 'green')
 create_size_color_rectangle(120, 100, 50, 'red')

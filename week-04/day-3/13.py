@@ -12,11 +12,7 @@ def create_line(x, y):
     px = 150
     py = 150
     canvas.create_line(x, y, px, py, fill= 'blue')
-    # 0 0,  5 0,  10 0 .... 300 0           x += 5 y = 0
-    # 300 5,  300 10  ...... 300 300        x = 300 y += 5
-    # 295 300,  290 300 ......  0, 300      x -= 5  y = 300
-    # 0 295, 0 290, .... 0 0                x = 0 y -= 5
-
+    
 w = 300
 
 def creat_lines_from_center():

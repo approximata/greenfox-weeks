@@ -10,11 +10,9 @@ root = Tk()
 
 canvas = Canvas(root, width=300, height=300)
 def create_line(x, y):
-
     x_end_point = x + 50
     y_end_point = y
-
-    return canvas.create_line(x, y, x_end_point, y_end_point, fill= 'green')
+    canvas.create_line(x, y, x_end_point, y_end_point, fill= 'green')
 
 create_line(32, 21)
 create_line(55, 67)

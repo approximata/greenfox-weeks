@@ -8,17 +8,16 @@ root = Tk()
 
 canvas = Canvas(root, width=300, height=300)
 def create_line(x1, y1, x2, y2):
-
     canvas.create_line(x1, y1, x2, y2, fill= 'blue')
 
 w = 300
 
-def creat_lines_vasarely():
+def create_lines_vasarely():
     for xyxy in range(w):
         if xyxy % 5 == 0:
             create_line(0, xyxy, xyxy, 300)
             create_line(xyxy, 0, 300, xyxy)
 
-creat_lines_vasarely()
+create_lines_vasarely()
 canvas.pack()
 mainloop()

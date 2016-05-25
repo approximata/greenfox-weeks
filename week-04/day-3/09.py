@@ -9,14 +9,13 @@ from tkinter import *
 root = Tk()
 
 canvas = Canvas(root, width=300, height=300)
-def create_size_color_center_rectangle(size, color):
 
+def create_size_color_center_rectangle(size, color):
     x = 150 - (size / 2)
     y = 150 - (size / 2)
     x_end_point = x + size
     y_end_point = y + size
-
-    return canvas.create_rectangle(x, y, x_end_point, y_end_point, fill=color)
+    canvas.create_rectangle(x, y, x_end_point, y_end_point, fill=color)
 
 create_size_color_center_rectangle(130, 'green')
 create_size_color_center_rectangle(40, 'red')
