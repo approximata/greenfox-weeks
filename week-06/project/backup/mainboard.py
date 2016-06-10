@@ -1,5 +1,8 @@
 from tkinter import *
 from draw import *
+from characters import *
+
+
 
 class Mainboard():
     def __init__(self, drawerpen):
@@ -17,6 +20,8 @@ class Mainboard():
         self.floor = PhotoImage(file = 'floor.gif')
         self.wall = PhotoImage(file = 'wall.gif')
         self.drawerpen = drawerpen
+        self.hero = Hero(drawerpen)
+        # self.hero = hero
         # self.hero-down = PhotoImage(file = 'hero-down.gif')
 
     def creatmapvalues(self):
@@ -26,6 +31,7 @@ class Mainboard():
                 mapplace = {}
                 mapplace['x'] = j
                 mapplace['y'] = i
+                # tile = Tile(x,y, floor)
                 if self.board[i][j] == 0:
                     mapplace['type'] = self.floor
                 elif self.board[i][j] == 1:
@@ -37,3 +43,14 @@ class Mainboard():
         mapcoords = self.creatmapvalues()
         for i in range(len(mapcoords)):
             self.drawerpen.drawobjects(mapcoords[i])
+
+    # def keypressed(self, event):
+        # if border_in({currentposition()[0]+1}):
+
+    # def border_in(self, charachterpostion):
+        # return self.charachterpostion[0] < 9 and self.charachterpostion[0] > 0 and self.charachterpostion[1] < 9 and self.charachterpostion[1] > 0
+
+    # def wall_out(self):
+        # charachterpostion = self.currentposition()
+        # mapelemets = self.creatmapvalues()
+        # return mapelemets['type'] == self.floor and mapelemets['x'] == charachterpostion[0] and mapelemets['y'] == charachterpostion[1]
