@@ -1,6 +1,6 @@
 from tkinter import *
 
-class Drawable():
+class Drawable(object):
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -36,21 +36,8 @@ class Hero(Drawable):
         self.x -= 1
         print(self.x)
 
-    # def move_right(self):
-    #     self.empty()
-    #     self.position['type'] = self.heroright
-    #     self.position['x'] += 1
-    #     self.drawobjects(self.position)
-    #
-    # def move_left(self):
-    #     self.empty()
-    #     self.position['type'] = self.heroleft
-    #     self.position['x'] -= 1
-    #     self.drawobjects(self.position)
-    #
-    # def currentposition(self):
-    #     return [self.position['x'], self.position['y']]
-
+    def get_currentposition(self):
+        return [self.x, self.y]
 
 class Floor(Drawable):
     def __init__(self, x, y):

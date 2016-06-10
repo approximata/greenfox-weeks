@@ -25,5 +25,17 @@ class Game(object):
         elif key == 'Left':
             self.hero.move_left()
             self.hero.drawchar(self.canvas)
+        self.is_in_the_map()
+        self.is_in_the_floor()
 
-    
+    def is_in_the_map(self):
+        x = self.hero.get_currentposition()[0]
+        y = self.hero.get_currentposition()[1]
+        print(x, y)
+        if x <= 9 and x >= 0 and y <= 9 and y >= 0:
+            print('in')
+        else:
+            print('out')
+
+    def is_in_the_floor(self):
+        print(self.map.board[self.hero.get_currentposition()[1]][self.hero.get_currentposition()[0]])
