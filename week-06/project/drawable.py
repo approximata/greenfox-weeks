@@ -26,6 +26,15 @@ class Hero(Drawable):
         self.y -= 1
         print(self.y)
 
+    def move_right(self):
+        self.imageofelem = PhotoImage(file = 'pic/hero-right.gif')
+        self.x += 1
+        print(self.x)
+
+    def move_left(self):
+        self.imageofelem = PhotoImage(file = 'pic/hero-left.gif')
+        self.x -= 1
+        print(self.x)
 
     # def move_right(self):
     #     self.empty()

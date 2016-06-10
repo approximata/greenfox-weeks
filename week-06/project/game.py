@@ -19,3 +19,11 @@ class Game(object):
         elif key == 'Up':
             self.hero.move_up()
             self.hero.drawchar(self.canvas)
+        elif key == 'Right':
+            self.hero.move_right()
+            self.hero.drawchar(self.canvas)
+        elif key == 'Left':
+            self.hero.move_left()
+            self.hero.drawchar(self.canvas)
+
+    
