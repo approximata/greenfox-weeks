@@ -13,29 +13,16 @@ class Game(object):
 
     def keyroute(self, key):
         key = key.keysym
-        if key == 'Down':
+        if key == 'Down' and self.map.is_step_valid(self.hero.x, self.hero.y + 1):
             self.hero.move_down()
             self.hero.drawchar(self.canvas)
-        elif key == 'Up':
+        elif key == 'Up' and self.map.is_step_valid(self.hero.x, self.hero.y - 1):
             self.hero.move_up()
             self.hero.drawchar(self.canvas)
-        elif key == 'Right':
+        elif key == 'Right' and self.map.is_step_valid(self.hero.x + 1, self.hero.y):
             self.hero.move_right()
             self.hero.drawchar(self.canvas)
-        elif key == 'Left':
+        elif key == 'Left'and self.map.is_step_valid(self.hero.x - 1, self.hero.y):
             self.hero.move_left()
             self.hero.drawchar(self.canvas)
-        self.is_in_the_map()
-        self.is_in_the_floor()
-
-    def is_in_the_map(self):
-        x = self.hero.get_currentposition()[0]
-        y = self.hero.get_currentposition()[1]
-        print(x, y)
-        if x <= 9 and x >= 0 and y <= 9 and y >= 0:
-            print('in')
-        else:
-            print('out')
-
-    def is_in_the_floor(self):
-        print(self.map.board[self.hero.get_currentposition()[1]][self.hero.get_currentposition()[0]])
+        print(self.map.is_step_valid(self.hero.x, self.hero.y))

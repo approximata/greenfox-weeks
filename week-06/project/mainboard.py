@@ -28,6 +28,15 @@ class Mainboard(object):
         for i in self.map:
             i.drawobjects(canvas)
 
+    def is_in_the_map(self, x, y):
+        return x <= 9 and x >= 0 and y <= 9 and y >= 0
+
+    def is_in_the_floor(self, x, y):
+        return self.board[y][x] == 0
+
+    def is_step_valid(self, x, y):
+        return self.is_in_the_map(x, y) and self.is_in_the_floor(x, y)
+
     # def border_in(self):
     #     return
 

@@ -31,7 +31,6 @@ class Mainboard():
                 mapplace = {}
                 mapplace['x'] = j
                 mapplace['y'] = i
-                # tile = Tile(x,y, floor)
                 if self.board[i][j] == 0:
                     mapplace['type'] = self.floor
                 elif self.board[i][j] == 1:

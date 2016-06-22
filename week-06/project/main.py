@@ -2,7 +2,6 @@ from tkinter import *
 from mainboard import *
 from drawable import Hero
 from game import *
-# from gamescreen import GameScreen
 
 canvas_width = 720
 canvas_height = 720
