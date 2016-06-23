@@ -4,7 +4,7 @@ from characters import Hero
 from game import *
 
 canvas_width = 720
-canvas_height = 720
+canvas_height = 750
 master = Tk()
 canvas = Canvas(master, width=canvas_width, height=canvas_height)
 canvas.pack()

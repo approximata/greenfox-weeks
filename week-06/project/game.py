@@ -2,6 +2,7 @@ from mainboard import *
 from drawable import *
 from characters import *
 from random import randint
+from stats import *
 
 class Game(object):
     def __init__(self, canvas):
@@ -13,6 +14,7 @@ class Game(object):
        self.skeleton1 = Skeleton(self.startcoordvar[1][0], self.startcoordvar[1][1])
        self.skeleton2 = Skeleton(self.startcoordvar[2][0], self.startcoordvar[2][1])
        self.boss = Boss(self.startcoordvar[3][0], self.startcoordvar[3][1])
+       self.stats = Stats(2, 10.1)
 
     def get_enemystartpoint(self):
         x = randint(0, 9)
@@ -40,6 +42,7 @@ class Game(object):
         self.skeleton1.drawchar(self.canvas)
         self.skeleton2.drawchar(self.canvas)
         self.boss.drawchar(self.canvas)
+        self.stats.statsprint(self.canvas)
 
     def keyroute(self, key):
         key = key.keysym
