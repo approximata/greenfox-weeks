@@ -1,59 +1,54 @@
-from tkinter import *
-from draw import *
-from mainboard import *
+from drawable import *
 
-class Character():
-    def __init__(self, drawerpen):
+class Charachter(object):
+    def __init__(self, healthp, defendp, strikep):
+        self.healthp = healthp
+        self.defendp = defendp
+        self.strikep = strikep
 
-        # self.health = health
-        # self.defend = defend
-        # self.strike = strike
-        self.drawerpen = drawerpen
+class Hero(Drawable, Charachter):
+    def __init__(self, x, y):
+        super ().__init__(x, y)
+        self.imageofelem = PhotoImage(file = 'pic/hero-down.gif')
 
-
-class Hero(Character):
-
-    def __init__(self, drawerpen):
-        super ().__init__(drawerpen)
-        self.floor = PhotoImage(file = 'floor.gif')
-        self.hero = PhotoImage(file = 'hero-down.gif')
-        self.heroup = PhotoImage(file = 'hero-up.gif')
-        self.heroright = PhotoImage(file = 'hero-right.gif')
-        self.heroleft = PhotoImage(file = 'hero-left.gif')
-        self.position = {'x': 0, 'y': 0, 'type': self.hero}
-        # self.x = 0
-        # self.y = 0
-
-
-    def startpoint(self):
-        self.drawerpen.drawobjects(self.position)
-
-    def empty(self):
-        self.drawerpen.drawobjects({'x': self.position['x'], 'y': self.position['y'], 'type': self.floor })
+    def drawchar(self, canvas):
+        self.drawobjects(canvas)
 
     def move_down(self):
-        self.empty()
-        self.position['type'] = self.hero
-        self.position['y'] += 1
-        self.drawerpen.drawobjects(self.position)
+        self.imageofelem = PhotoImage(file = 'pic/hero-down.gif')
+        self.y += 1
+        print(self.y)
 
     def move_up(self):
-        self.empty()
-        self.position['type'] = self.heroup
-        self.position['y'] -= 1
-        self.drawerpen.drawobjects(self.position)
+        self.imageofelem = PhotoImage(file = 'pic/hero-up.gif')
+        self.y -= 1
+        print(self.y)
 
     def move_right(self):
-        self.empty()
-        self.position['type'] = self.heroright
-        self.position['x'] += 1
-        self.drawerpen.drawobjects(self.position)
+        self.imageofelem = PhotoImage(file = 'pic/hero-right.gif')
+        self.x += 1
+        print(self.x)
 
     def move_left(self):
-        self.empty()
-        self.position['type'] = self.heroleft
-        self.position['x'] -= 1
-        self.drawerpen.drawobjects(self.position)
+        self.imageofelem = PhotoImage(file = 'pic/hero-left.gif')
+        self.x -= 1
+        print(self.x)
 
-    def currentposition(self):
-        return [self.position['x'], self.position['y']]
+    def get_currentposition(self):
+        return [self.x, self.y]
+
+class Skeleton(Drawable, Charachter):
+    def __init__(self, x, y):
+        super ().__init__(x, y)
+        self.imageofelem = PhotoImage(file = 'pic/skeleton.gif')
+
+    def drawchar(self, canvas):
+        self.drawobjects(canvas)
+
+class Boss(Drawable, Charachter):
+    def __init__(self, x, y):
+        super ().__init__(x, y)
+        self.imageofelem = PhotoImage(file = 'pic/boss.gif')
+
+    def drawchar(self, canvas):
+        self.drawobjects(canvas)

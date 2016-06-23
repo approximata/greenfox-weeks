@@ -1,6 +1,6 @@
 from tkinter import *
 from mainboard import *
-from drawable import Hero
+from characters import Hero
 from game import *
 
 canvas_width = 720

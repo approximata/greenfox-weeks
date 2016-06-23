@@ -36,11 +36,3 @@ class Mainboard(object):
 
     def is_step_valid(self, x, y):
         return self.is_in_the_map(x, y) and self.is_in_the_floor(x, y)
-
-    # def border_in(self):
-    #     return
-
-    # def wall_out(self):
-        # charachterpostion = self.currentposition()
-        # mapelemets = self.creatmapvalues()
-        # return mapelemets['type'] == self.floor and mapelemets['x'] == charachterpostion[0] and mapelemets['y'] == charachterpostion[1]
