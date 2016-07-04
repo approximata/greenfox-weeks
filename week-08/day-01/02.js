@@ -13,6 +13,7 @@ var strudents = [
 // create a function that counts all the books of an array of students
 // not every student has a property called books
 
+// VER 1
 // function sumofthebook(object){
 //   var x = 0;
 //   object.forEach(function(e){
@@ -21,6 +22,7 @@ var strudents = [
 //   return x
 // }
 
+// VER 2
 // function sumofthebook(object) {
 //   return object.reduce(function(sumofbooks, student){
 //     sumofbooks += (student.books || []).length;

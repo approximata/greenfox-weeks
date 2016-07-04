@@ -11,41 +11,9 @@
 //  - color: the cars type as a string (eg: 'red')
 //  - balance: the cars parking credis as a number (eg: 500)
 //
-
-function Car(typeofcar, color, balance) {
-  this.typeofcar = typeofcar;
-  this.color = color;
-  this.balance = balance;
-  this.id = 0;
-  this.enters = [];
-}
 // every car should have an id property (a number), that is
 // unique for all the cars, staeting form 0
 //
-
-Car.prototype.enterDate = function(date) {
-  var d = new date;
-  this.enters.push(d.getTime);
-  return this.enters;
-};
-
-Car.prototype.getEnterDate = function() {
-  return this.enters[(this.enters).length - 1];
-};
-
-Car.prototype.leave = function(price) {
-  this.balance += price;
-  return this.balance;
-};
-
-Car.prototype.getStats = function() {
-  return 'Type: ' + this.typeofcar + ' color: ' + this.color + ' balance: ' + this.balance
-}
-
-var myauto = new Car('trabant','red','120');
-console.log(myauto.enterDate(2012));
-console.log(myauto.getStats());
-
 // Methods:
 // enter(enterDate)
 //  - it should store the date of entering
@@ -61,6 +29,44 @@ console.log(myauto.getStats());
 //    "Type: volvo, Color: red, Balance: 500"
 //
 //
+
+function Car(typeofcar, color, balance) {
+  this.typeofcar = typeofcar;
+  this.color = color;
+  this.balance = balance;
+  this.id = 0;
+  this.enters = [];
+}
+
+Car.prototype.enter = function(enterDate) {
+  var enterD = new Date(enterDate);
+  this.enters.push(enterD.getTime());
+  return this.enters;
+};
+
+Car.prototype.getEnterDate = function() {
+  var lastenter = new Date(this.enters[(this.enters).length - 1]);
+  return lastenter.toString();
+};
+
+Car.prototype.leave = function(price) {
+  this.balance -= price;
+  return this.balance;
+};
+
+Car.prototype.getStats = function() {
+  return 'Type: ' + this.typeofcar + ' color: ' + this.color + ' balance: ' + this.balance
+}
+
+var myauto = new Car('trabant','red','120');
+console.log(myauto.enter('Dec 25, 1995'));
+console.log(myauto.enter('Dec 25, 2014'));
+myauto.leave(40);
+console.log(myauto.getStats());
+console.log(myauto.getEnterDate());
+console.log(myauto.enters);
+
+
 // Create a CarPark constructor
 // it should take 2 parameters
 //  - income: the initial credits as a number (eg: 4000)

@@ -22,3 +22,5 @@ var square = new Rectangle(4, 5);
 console.log(square.getArea());
 
 console.log(square.getCircumference());
+
+module.exports = Rectangle;
