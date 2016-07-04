@@ -17,20 +17,18 @@ var strudents = [
 //   var x = 0;
 //   object.forEach(function(e){
 //     x += (e.books || []).length;
-//   //  if ((e.books).lenght) > 0) {
-//   //    x += books.lenght;
-//   //  }
 //   });
 //   return x
 // }
-// function sumofthebook(object){
+
+// function sumofthebook(object) {
 //   return object.reduce(function(sumofbooks, student){
 //     sumofbooks += (student.books || []).length;
-//     return sumofbooks
+//     return sumofbooks;
 //   }, 0);
 // }
 
-function sumofthebook(object){
+function sumofthebook(object) {
   return object.reduce((sumofbooks, student) => sumofbooks += (student.books || []).length, 0);
 }
 
