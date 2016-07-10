@@ -6,17 +6,51 @@ var inputField = document.querySelector('input');
 function addHtml(element) {
   var newTodo = document.createElement('div');
   newTodo.classList.add('taskholder');
-  newTodo.innerHTML = '<div class="todo-item">' + element.text + '</div> <div class="buttons" id="1"> <button class="delete" type="button"></button> <input class="check" type="checkbox"></input> </div>';
-  newTodo.setAttribute('id', element.id);
+  newTodo.innerHTML = '<div class="todo-item">' + element.text + '</div> <div class="buttons"> <button class="delete" type="button" id=' + 'd' + element.id + '></button> <input class="check" type="checkbox" id=' + 'c' + element.id + '></input> </div>';
+  newTodo.setAttribute('id', 'task' + element.id);
   todolist.appendChild(newTodo);
+  newTodo.querySelector('#d' + element.id).addEventListener('click', deleteTask);
+  newTodo.querySelector('#c' + element.id).addEventListener('click', chkTask);
   var checked = newTodo.querySelector('.check');
   checked.checked = element.completed;
   inputField.value = '';
 }
 
-// function createDelete() {
-//
-// }
+function deleteTask(event) {
+  var xhr = new XMLHttpRequest();
+  var targetId = event.target.id;
+  console.log(targetId);
+  var serverId = targetId.slice(1);
+  console.log(serverId);
+  xhr.open('DELETE', 'https://mysterious-dusk-8248.herokuapp.com/todos/' + serverId, true);
+  xhr.setRequestHeader('Accept', 'application/json');
+  xhr.onload = function() {
+    if (xhr.readyState === 4) {
+      todolist.removeChild(document.querySelector('#task' + serverId));
+    }
+  }
+  xhr.send(null);
+}
+
+function chkTask(event) {
+  var xhr = new XMLHttpRequest();
+  var id = event.target.getAttribute('id').slice(1);
+  console.log(id);
+  console.log(document.querySelector('#task' + id).textContent);
+  var sendComplete = {
+    text: document.querySelector('#task' + id).textContent,
+    completed: true
+  };
+  xhr.open('PUT', 'https://mysterious-dusk-8248.herokuapp.com/todos/' + id, true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onload = function() {
+    if (xhr.readyState === 4) {
+      document.querySelector('#c' + id).classList.add('checked');
+    }
+  };
+  xhr.send(JSON.stringify(sendComplete));
+}
+
 
 function drawTasks(inputdata) {
   inputdata.forEach(function (element) {
